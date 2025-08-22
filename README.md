@@ -1,12 +1,80 @@
-## 这是由ollama官方文档翻译而来，方便中国境内使用
-### 一，声明如下：
-   1.Ollama是**ollama**公司的商标，本项目为开源项目，可自由阅读其源代码，对它做改动，但转载与使用时应注明原作者，且不得用于商业用途。   
-   2.本项目是由ollama官方仓库的文件整理翻译而来，如有错误，请及时指正。本项目仅支持使用**简体中文**（原文件使用英语（美国），部分注明使用英语的除外），如有发现使用其他语言的文件，一经发现，将由创建者删除。  
-   3.本项目欢迎其他有志之士参加，共同壮大阵营。如有意象加入此项目，请发送至创建者邮箱，等待核查。（具体要求请详见**JIONUS.md**）     
-### 二，关于ollama-Python：
-  详见**ollama-Python.md**   
-### 三，关于我们：
-  如有任何疑问，请发送至创建者邮箱：  
-  **www.jiang090322@outlook.com**
-   
-  
+# Running Examples
+
+Run the examples in this directory with:
+```sh
+# Run example
+python3 examples/<example>.py
+```
+
+See [ollama/docs/api.md](https://github.com/ollama/ollama/blob/main/docs/api.md) for full API documentation
+
+### Chat - Chat with a model
+- [chat.py](chat.py)
+- [async-chat.py](async-chat.py)
+- [chat-stream.py](chat-stream.py) - Streamed outputs
+- [chat-with-history.py](chat-with-history.py) - Chat with model and maintain history of the conversation
+
+
+### Generate - Generate text with a model
+- [generate.py](generate.py)
+- [async-generate.py](async-generate.py)
+- [generate-stream.py](generate-stream.py) - Streamed outputs
+- [fill-in-middle.py](fill-in-middle.py) - Given a prefix and suffix, fill in the middle
+
+
+### Tools/Function Calling - Call a function with a model
+- [tools.py](tools.py) - Simple example of Tools/Function Calling
+- [async-tools.py](async-tools.py)
+- [multi-tool.py](multi-tool.py) - Using multiple tools, with thinking enabled
+
+ #### gpt-oss
+- [gpt-oss-tools.py](gpt-oss-tools.py)
+- [gpt-oss-tools-stream.py](gpt-oss-tools-stream.py) 
+- [gpt-oss-tools-browser.py](gpt-oss-tools-browser.py) - Using browser research tools with gpt-oss
+- [gpt-oss-tools-browser-stream.py](gpt-oss-tools-browser-stream.py) - Using browser research tools with gpt-oss, with streaming enabled
+
+
+### Multimodal with Images - Chat with a multimodal (image chat) model
+- [multimodal-chat.py](multimodal-chat.py)
+- [multimodal-generate.py](multimodal-generate.py)
+
+
+### Structured Outputs - Generate structured outputs with a model
+- [structured-outputs.py](structured-outputs.py)
+- [async-structured-outputs.py](async-structured-outputs.py)
+- [structured-outputs-image.py](structured-outputs-image.py)
+
+
+### Ollama List - List all downloaded models and their properties
+- [list.py](list.py)
+
+
+### Ollama Show - Display model properties and capabilities
+- [show.py](show.py)
+
+
+### Ollama ps - Show model status with CPU/GPU usage
+- [ps.py](ps.py)
+
+
+### Ollama Pull - Pull a model from Ollama
+Requirement: `pip install tqdm`
+- [pull.py](pull.py) 
+
+
+### Ollama Create - Create a model from a Modelfile
+- [create.py](create.py) 
+
+
+### Ollama Embed - Generate embeddings with a model
+- [embed.py](embed.py)
+
+
+### Thinking - Enable thinking mode for a model
+- [thinking.py](thinking.py)
+
+### Thinking (generate) - Enable thinking mode for a model
+- [thinking-generate.py](thinking-generate.py)
+
+### Thinking (levels) - Choose the thinking level
+- [thinking-levels.py](thinking-generate.py)
